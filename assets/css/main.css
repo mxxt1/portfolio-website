@@ -1638,9 +1638,18 @@ input, select, textarea {
 		}
 
 		.image.featured {
-			display: block;
-			width: 100%;
-			margin: 0 0 2em 0;
+			display: flex;
+			justify-content: center;
+			/* width: 100%;
+			margin: 0 0 2em 0; */
+			width:100%;
+			/* margin: 0 auto; */
+		}	
+		
+
+		image.featured img{
+			width:100%;
+			
 		}
 
 		.image.left {
@@ -1655,7 +1664,7 @@ input, select, textarea {
 
 			.image.centered img {
 				margin: 0 auto;
-				width: auto;
+				width: 100%;
 			}
 
 /* Button */
@@ -1686,10 +1695,11 @@ input, select, textarea {
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.5), inset 0px 2px 1px 0px rgba(255, 255, 255, 0.75);
-		background-color: #43B3E0;
+		background-color: #5174D1;
 		padding: 1em 2.35em 1em 2.35em;
 		font-size: 1.1em;
 		max-width: 24em;
+		margin-top:10%;
 	}
 
 		input[type="button"]:hover,
@@ -1915,15 +1925,22 @@ input, select, textarea {
 		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
 		text-align: center;
 		padding: 2em;
+		
 	}
 
 		.box.style1 {
-			padding: 3em 2em 3.5em 2em;
+			padding: 4em 2em 3.5em 2em;
+			height:100%;
 		}
 
 			.box.style1 h3 {
 				margin-bottom: 0.5em;
+				margin-top:2em;
 			}
+
+		.box.style2{
+			height: 100%;
+		}	
 
 		.box.style2 h3 {
 			margin-bottom: 0.25em;
@@ -1933,8 +1950,12 @@ input, select, textarea {
 			position: relative;
 			left: 2em;
 			top: 2em;
-			margin: -4em 0 4em -4em;
-			width: auto;
+			margin: -4em 0em 4em -4em;
+			width: 100%;
+		}
+
+		.box.style2 img{
+			width:80%;
 		}
 
 /* Icons */
@@ -2282,6 +2303,7 @@ input, select, textarea {
 				margin: 1.5em 0 2em 0;
 			}
 
+
 		/* Section/Article */
 
 			section, article {
@@ -2299,6 +2321,7 @@ input, select, textarea {
 				font-size: 1.2em;
 				width: 100%;
 				padding: 1em 0 1em 0;
+				
 			}
 
 				input[type="button"].large,
@@ -2308,6 +2331,7 @@ input, select, textarea {
 				.button.large {
 					font-size: 1.2em;
 					letter-spacing: 0;
+					
 				}
 
 		/* Social */
@@ -2376,7 +2400,14 @@ input, select, textarea {
 					max-width: 32em;
 					margin-left: auto !important;
 					margin-right: auto !important;
+					
 				}
+
+
+				article.box.style2{
+					min-height:100%;
+				}
+
 
 		/* Wrappers */
 
